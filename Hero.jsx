@@ -58,7 +58,7 @@ function Hero({ variant = 'light-switch' }) {
           <div className="lp-hero-portrait">
             <span className="lp-sygnet lp-hero-portrait-bg"></span>
             <div className="lp-hero-portrait-glow" aria-hidden="true"></div>
-            <img src="assets/photo.jpg" alt="Patryk Lampkowski" style={{ position:'relative', zIndex:2, width:'100%', height:'100%', objectFit:'cover', objectPosition:'top', display:'block' }} />
+            <img src="assets/photo.png" alt="Patryk Lampkowski" style={{ position:'relative', zIndex:2, width:'100%', height:'100%', objectFit:'cover', objectPosition:'top', display:'block' }} />
             <figcaption className="lp-hero-portrait-caption">
               <span className="lp-portrait-dash" aria-hidden="true"></span>
               <span className="lp-portrait-name">Patryk Lampkowski</span>
