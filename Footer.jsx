@@ -14,7 +14,12 @@ function Footer() {
           <a href="#contact">Kontakt</a>
         </nav>
         <div className="lp-footer-legal">
-          <span>© 2026 Lampka Performance · Patryk Lampkowski</span>
+          <span>© 2026 Lampka Performance · Patryk Lampkowski Visible It · NIP: 7393975847 · REGON: 523647030</span>
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <a href="/polityka-prywatnosci.html" style={{ color: 'rgba(255,255,255,.35)', textDecoration: 'none', fontSize: '12px' }}>Polityka prywatności</a>
+            <a href="/polityka-cookies.html" style={{ color: 'rgba(255,255,255,.35)', textDecoration: 'none', fontSize: '12px' }}>Polityka cookies</a>
+            <a href="/regulamin.html" style={{ color: 'rgba(255,255,255,.35)', textDecoration: 'none', fontSize: '12px' }}>Regulamin</a>
+          </div>
         </div>
       </div>
     </footer>
