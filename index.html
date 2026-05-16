@@ -4,26 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lampka Performance — Włączam światło tam, gdzie marketing działa po omacku</title>
-<meta name="description" content="Performance, analityka i strategia digital dla B2B i e-commerce. Bez korpo mowy, bez magicznych sztuczek — pokazuję co działa, co nie i gdzie lecą Twoje pieniądze.">
-<meta property="og:title" content="Lampka Performance — Włączam światło w marketingu">
-<meta property="og:description" content="Performance marketing, analityka i strategia digital dla firm B2B i e-commerce. Patryk Lampkowski.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="../../colors_and_type.css">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
 <div id="root"></div>
 
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-<script src="assets/lampka-logo.js"></script>
+<script src="../../assets/lampka-logo.js"></script>
 <script src="image-slot.js"></script>
-<script src="animations.js" defer></script>
 
 <script type="text/babel" src="Header.jsx"></script>
 <script type="text/babel" src="Hero.jsx"></script>
@@ -38,7 +30,9 @@
 <script type="text/babel" src="Footer.jsx"></script>
 
 <script type="text/babel">
-  const HERO_VARIANT = { "heroVariant": "light-switch" };
+  const HERO_VARIANT = /*EDITMODE-BEGIN*/{
+    "heroVariant": "light-switch"
+  }/*EDITMODE-END*/;
 
   function App() {
     return (
@@ -70,6 +64,7 @@
     setTimeout(() => window.LampkaLogo && window.LampkaLogo.injectAll(), 50);
   });
 
+  // Re-run injector when React re-renders (e.g. form submit)
   const obs = new MutationObserver(() => {
     if (document.querySelector('.lp-sygnet:not(svg)')) {
       window.LampkaLogo && window.LampkaLogo.injectAll();
