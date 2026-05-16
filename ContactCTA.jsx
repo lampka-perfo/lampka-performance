@@ -1,6 +1,6 @@
 // ContactCTA.jsx — closing CTA + Formspree form
 // SETUP: Replace YOUR_FORMSPREE_ID below with the ID from formspree.io (e.g. "xyzabc12")
-const FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+const FORMSPREE_ID = 'mzdwpbdo';
 
 function ContactCTA() {
   const [submitted, setSubmitted] = React.useState(false);
@@ -44,8 +44,16 @@ function ContactCTA() {
             <div>
               <div className="lp-eyebrow lp-dim">E-mail</div>
               <div className="lp-contact-line">
-                <a href="mailto:pa.lampkowski@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
-                  pa.lampkowski@gmail.com
+                <a href="mailto:patryk@lampka-performance.pl" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  patryk@lampka-performance.pl
+                </a>
+              </div>
+            </div>
+            <div>
+              <div className="lp-eyebrow lp-dim">Telefon</div>
+              <div className="lp-contact-line">
+                <a href="tel:+48691463095" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  +48 691 463 095
                 </a>
               </div>
             </div>
