@@ -426,6 +426,18 @@ body { font-family: 'Poppins', system-ui, sans-serif; font-weight:400; -webkit-f
   opacity: 1;
 }
 
+/* Consultant pillars animation */
+.lp-pillar-animate {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.55s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lp-pillar-animate.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Card hover */
 .lp-card {
   transition: transform 0.22s cubic-bezier(0.2,0.7,0.2,1), box-shadow 0.22s;
@@ -433,6 +445,73 @@ body { font-family: 'Poppins', system-ui, sans-serif; font-weight:400; -webkit-f
 .lp-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0,0,0,.4), inset 0 3px 0 #EFD500;
+}
+
+/* Mark animations — yellow highlight effects */
+mark.lp-mark-animate {
+  display: inline;
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-duration: 0.85s;
+  transition-property: opacity, transform, filter, background-size;
+}
+
+/* A: Rise — wjazd z dołu */
+mark.lp-mark-rise {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(14px);
+}
+mark.lp-mark-rise.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* B: Pop — skalowanie */
+mark.lp-mark-pop {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.82);
+}
+mark.lp-mark-pop.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* C: Left — wjazd z lewej */
+mark.lp-mark-left {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-18px);
+}
+mark.lp-mark-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* D: Sweep — zamiatanie żółtego tła (marker) */
+mark.lp-mark-sweep {
+  background-size: 0% 80% !important;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+  background-image: linear-gradient(#EFD500, #EFD500) !important;
+  color: transparent;
+  transition: background-size 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.2s ease 0.5s;
+}
+mark.lp-mark-sweep.is-visible {
+  background-size: 100% 80% !important;
+  color: #000;
+}
+
+/* E: Blur — blur do ostrości */
+mark.lp-mark-blur {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(8px);
+  transition: opacity 0.85s ease, filter 0.85s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+mark.lp-mark-blur.is-visible {
+  opacity: 1;
+  filter: blur(0);
 }
 
 /* Typing cursor */
