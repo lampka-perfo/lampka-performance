@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lampka Performance — Włączam światło tam, gdzie marketing działa po omacku</title>
+<meta name="description" content="Performance, analityka i strategia digital dla B2B i e-commerce. Bez korpo mowy, bez magicznych sztuczek — pokazuję co działa, co nie i gdzie lecą Twoje pieniądze.">
+<meta property="og:title" content="Lampka Performance — Włączam światło w marketingu">
+<meta property="og:description" content="Performance marketing, analityka i strategia digital dla firm B2B i e-commerce. Patryk Lampkowski.">
+<meta property="og:type" content="website">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N74L8WSR');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N74L8WSR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script src="assets/lampka-logo.js"></script>
+<script src="image-slot.js"></script>
+<script src="animations.js" defer></script>
+
+<script type="text/babel" src="Header.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="ServicesGrid.jsx"></script>
+<script type="text/babel" src="Pains.jsx"></script>
+<script type="text/babel" src="Compare.jsx"></script>
+<script type="text/babel" src="ConsultantValue.jsx"></script>
+<script type="text/babel" src="Process.jsx"></script>
+<script type="text/babel" src="SuccessSpotlight.jsx"></script>
+<script type="text/babel" src="FAQ.jsx"></script>
+<script type="text/babel" src="ContactCTA.jsx"></script>
+<script type="text/babel" src="Footer.jsx"></script>
+
+<script type="text/babel">
+  const HERO_VARIANT = { "heroVariant": "light-switch" };
+
+  function App() {
+    return (
+      <>
+        <Header />
+        <Hero variant={HERO_VARIANT.heroVariant} />
+        <ServicesGrid />
+        <Pains />
+        <Compare />
+        <ConsultantValue />
+        <Process />
+        <SuccessSpotlight />
+        <FAQ />
+        <ContactCTA />
+        <Footer />
+      </>
+    );
+  }
+
+  const DEPS = ['Header','Hero','ServicesGrid','Pains','Compare','ConsultantValue','Process','SuccessSpotlight','FAQ','ContactCTA','Footer'];
+
+  function whenReady(deps, cb) {
+    const ok = deps.every(k => typeof window[k] === 'function');
+    if (ok) cb();
+    else setTimeout(() => whenReady(deps, cb), 30);
+  }
+  whenReady(DEPS, () => {
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    setTimeout(() => window.LampkaLogo && window.LampkaLogo.injectAll(), 50);
+  });
+
+  const obs = new MutationObserver(() => {
+    if (document.querySelector('.lp-sygnet:not(svg)')) {
+      window.LampkaLogo && window.LampkaLogo.injectAll();
+    }
+  });
+  obs.observe(document.body, { childList: true, subtree: true });
+</script>
+</body>
+</html>
