@@ -3,33 +3,33 @@ function Pains() {
   const items = [
     {
       ico: 'assets/icons/chart-down-arrow.svg',
-      title: 'ROAS spada miesiąc do miesiąca',
+      title: 'Wydajesz tyle samo na reklamy, a sprzedaż maleje',
       desc: 'Budżet ten sam, wyniki gorsze. Nikt nie wie dlaczego — bo nikt nie sprawdził, gdzie konkretnie się sypie.',
     },
     {
       ico: 'assets/icons/folder-search.svg',
-      title: 'Agencja przysyła ładne PDF-y, ale CAC rośnie',
-      desc: 'Slajdy wyglądają świetnie, kasa na koncie — niekoniecznie. Cyfry w panelu i cyfry w biznesie to dwie różne rzeczy.',
+      title: 'Zaczynasz reklamować się online i nie wiesz od czego zacząć',
+      desc: 'Google, Meta, TikTok, LinkedIn — każdy mówi że to najlepsze miejsce. Bez planu każda złotówka to eksperyment.',
     },
     {
       ico: 'assets/icons/idea-lightbulb.svg',
-      title: '"AI to ogarnie" przestało ogarniać',
-      desc: 'Pmax i Advantage+ działały, dopóki działały. Teraz trzeba je prowadzić ręką, zamiast modlić się do auto-biddingu.',
+      title: 'Reklamy "same się optymalizują", ale efektów brak',
+      desc: 'Kampanie na autopilocie działały, dopóki działały. Teraz trzeba je prowadzić z głową, zamiast ślepo ufać automatom.',
     },
     {
       ico: 'assets/icons/network-tree.svg',
-      title: 'GA4 pokazuje co innego niż panel reklamowy',
-      desc: 'GA4 pokazuje jedno, panel reklamowy drugie, a prawda jest gdzieś pośrodku. Wiem, jak to poustawiać — żeby GA4 był drogowskazem, nie źródłem chaosu.',
+      title: 'Każde narzędzie pokazuje inne liczby i nie wiesz komu wierzyć',
+      desc: 'Google mówi jedno, Meta drugie, a prawda jest gdzieś pośrodku. Wiem, jak to poustawiać — żeby dane były drogowskazem, nie źródłem chaosu.',
     },
     {
       ico: 'assets/icons/chart-up-arrow.svg',
-      title: 'Skalujesz budżet, a sprzedaż stoi',
-      desc: 'Pomnożenie wydatków przez dwa nie pomnożyło zamówień. Sufit nie jest w reklamie — jest gdzie indziej w lejku.',
+      title: 'Dostajesz zapytania, ale to nie są Twoi klienci',
+      desc: 'Leady przychodzą, ale nie kupują — zła grupa, zła treść, zły budżet. Albo wszystkie trzy naraz.',
     },
     {
       ico: 'assets/icons/molecule-share.svg',
-      title: 'Nie wiesz, który kanał faktycznie sprzedaje',
-      desc: 'Nie wiesz, który kanał dowozi, bo każdy pokazuje co innego. To nie problem z danymi — to problem z tym, że nikt tego nie poukładał.',
+      title: 'Konkurencja rośnie, a Ty nie wiesz jak reagować',
+      desc: 'Coraz więcej firm walczy o tych samych klientów. Bez danych nie wiesz gdzie tracisz, gdzie możesz zyskać i co zmienić.',
     },
   ];
   return (
