@@ -3,14 +3,14 @@ function ServicesGrid() {
   const items = [
     {
       icon: 'assets/icons/folder-search.svg',
-      title: 'Audyt 360°',
-      desc: 'Wchodzę w Twoje dane i mówię, jak jest. Pokazuję, gdzie tracisz pieniądze i co naprawić — w kolejności, która ma sens.',
+      title: 'Diagnoza i strategia',
+      desc: 'Zanim cokolwiek odpalę, sprawdzam co działa, co nie i dlaczego. Dostajesz konkretny plan — co poprawić, w jakiej kolejności i czego się spodziewać.',
       featured: true,
     },
     {
       icon: 'assets/icons/chart-up-arrow.svg',
-      title: 'Performance ads',
-      desc: 'Google, Meta, TikTok, LinkedIn. Buduję i prowadzę kampanie z jednym celem — żeby zarabiały, nie tylko wyglądały. Wyniki, nie raporty.',
+      title: 'Reklamy, które sprzedają',
+      desc: 'Prowadzę kampanie na Google, Meta, TikTok i LinkedIn. Nie chodzi o ładne kreacje — chodzi o to, żeby każda złotówka wracała z nawiązką.',
     },
     {
       icon: 'assets/icons/laptop-chart.svg',

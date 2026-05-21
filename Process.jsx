@@ -7,10 +7,10 @@ function Process() {
       time: '1 tydzień',
       title: 'Czytam wszystko, mówię prawdę',
       bullets: [
-        'Audyt kont reklamowych',
-        'GA4 + Tag Manager + atrybucja — co działa, co kłamie',
-        'Lejek od pierwszej reklamy do faktury',
-        'Raport bez owijania w bawełnę — co znalazłem, co naprawić, co zostawić.',
+        'Sprawdzam co masz, czego nie masz i od czego zacząć',
+        'Konta reklamowe, strona, analityka, oferta — patrzę na całość',
+        'Mówię co działa, co nie i dlaczego',
+        'Dostajesz raport bez owijania w bawełnę — co naprawić, w jakiej kolejności',
       ],
     },
     {

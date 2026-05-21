@@ -79,16 +79,19 @@ function ContactCTA() {
                 <input name="email" required type="email" placeholder="ty@firma.pl" />
               </label>
               <label>
-                <span>Czy aktualnie prowadzisz kampanie płatne?</span>
-                <select name="paid_campaigns" style={{ fontFamily: 'inherit', background: '#0a0a0a', color: '#fff', border: '1px solid rgba(255,255,255,.12)', borderRadius: '8px', padding: '14px 16px', fontSize: '15px', outline: 'none' }}>
+                <span>Miesięczny budżet reklamowy</span>
+                <select name="budget" style={{ fontFamily: 'inherit', background: '#0a0a0a', color: '#fff', border: '1px solid rgba(255,255,255,.12)', borderRadius: '8px', padding: '14px 16px', fontSize: '15px', outline: 'none' }}>
                   <option value="">Wybierz...</option>
-                  <option value="tak">Tak</option>
-                  <option value="nie">Nie</option>
-                  <option value="planuję">Planuję</option>
+                  <option value="dopiero-zaczynam">Dopiero zaczynam / nie mam jeszcze budżetu</option>
+                  <option value="do-4000">do 4 000 zł/mies.</option>
+                  <option value="4000-8000">4 000 – 8 000 zł/mies.</option>
+                  <option value="8000-15000">8 000 – 15 000 zł/mies.</option>
+                  <option value="15000-30000">15 000 – 30 000 zł/mies.</option>
+                  <option value="powyzej-30000">powyżej 30 000 zł/mies.</option>
                 </select>
               </label>
               <label>
-                <span>Co u Ciebie nie działa?</span>
+                <span>Co chcesz osiągnąć?</span>
                 <textarea name="message" rows={3} placeholder="Krótko — co Cię tu sprowadziło." />
               </label>
               <label className="lp-check">

@@ -33,6 +33,34 @@ function FAQ() {
       q: 'Jak zaczynamy?',
       a: 'Pogadanka 30–45 min na Google Meet. Bez prezentacji, bez sprzedaży. Po niej powiem szczerze, czy w ogóle warto zaczynać — czasem mówię „nie potrzebujesz mnie, zostań przy obecnym setupie".',
     },
+    {
+      q: 'Skąd mam wiedzieć, że wiesz co robisz?',
+      a: 'Mam. Ale szczerze — każdy może zdać test. Nie traktuję ich jako dowód na nic. Jeśli ciekawi Cię co faktycznie odróżnia dobrego specjalistę od złego, napisz — to ciekawsza rozmowa niż pokazywanie PDF-ów.',
+    },
+    {
+      q: 'Czy będę miał dostęp do konta reklamowego?',
+      a: 'Tak, zawsze. Nie jestem jedynym administratorem — masz pełny wgląd w każdej chwili. Jeśli kiedykolwiek zakończymy współpracę, konto zostaje u Ciebie.',
+    },
+    {
+      q: 'Czy muszę mieć stronę internetową?',
+      a: 'Tak — dobra strona to warunek efektywnych kampanii. Możesz mieć najlepsze reklamy na świecie, ale jeśli strona nie konwertuje, pieniądze lecą w próżnię. Powiem Ci co i jak poprawić.',
+    },
+    {
+      q: 'Co jeśli kampania nie będzie działać?',
+      a: 'Nie chowam głowy w piasek. Analizuję co się dzieje, mówię wprost i proponuję zmiany. Jeśli problem leży poza kampanią — w ofercie, stronie lub cenie — też o tym powiem. Nie sprzedam Ci optymizmu na fakturze.',
+    },
+    {
+      q: 'Ile trwa onboarding — kiedy startujemy?',
+      a: '5–7 dni roboczych od podpisania umowy do uruchomienia pierwszych kampanii. Potrzebuję dostępów do kont, briefu i materiałów — resztą zajmuję się sam.',
+    },
+    {
+      q: 'Czy pracujesz z firmami które dopiero zaczynają z reklamami?',
+      a: 'Tak. Różnica jest tylko w punkcie startowym — z kimś kto ma już kampanie zaczynam od audytu, z kimś nowym od diagnozy i strategii. Wynik ten sam: wiesz co robisz i dlaczego.',
+    },
+    {
+      q: 'Ile kampanii prowadzisz jednocześnie?',
+      a: 'Świadomie ograniczoną liczbę. Nie jestem agencją z 50 klientami i juniorami na koncie. Każdy projekt ma moją pełną uwagę — i to jest warunek dobrej roboty.',
+    },
   ];
   const [open, setOpen] = React.useState(0);
 

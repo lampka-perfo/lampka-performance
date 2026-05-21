@@ -3,7 +3,7 @@ function ConsultantValue() {
   const pillars = [
     {
       n: '01',
-      t: 'CPC to nie wynik — wynik to przelew',
+      t: 'Mierzę sukces w złotówkach, nie w kliknięciach',
       d: 'Wchodzę w ofertę, stronę, lejek i koszyk. Reklama to tylko wejście — jeśli reszta nie działa, żaden budżet tego nie naprawi.',
     },
     {
