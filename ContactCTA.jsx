@@ -13,6 +13,8 @@ function ContactCTA() {
 
     if (FORMSPREE_ID === 'YOUR_FORMSPREE_ID') {
       setSubmitted(true);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'form_send', form_name: 'contact' });
       return;
     }
 
@@ -23,7 +25,14 @@ function ContactCTA() {
         body: data,
         headers: { Accept: 'application/json' },
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'generate_lead',
+          form_name: 'contact',
+        });
+      }
     } finally {
       setSending(false);
     }
