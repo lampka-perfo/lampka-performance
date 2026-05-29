@@ -355,7 +355,7 @@ body { font-family: 'Poppins', system-ui, sans-serif; font-weight:400; -webkit-f
 .lp-quote-role { font-size:14px; color:rgba(0,0,0,.55); }
 
 /* ---------- Contact ---------- */
-.lp-contact { position:relative; overflow:visible; padding-bottom:120px; }
+.lp-contact { position:relative; overflow:hidden; padding-bottom:120px; }
 .lp-contact-bleed { position:absolute; right:-380px; bottom:-260px; width:560px; height:560px; color:#fff; pointer-events:none; opacity:.32; }
 .lp-contact-inner { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; position:relative; }
 .lp-h-display-sm { font-size: clamp(40px, 5vw, 72px); }
@@ -557,6 +557,14 @@ svg.lp-hero-portrait-bg path:nth-of-type(5) { animation: lp-arc-in 0.2s ease 1.1
   .lp-hero-channels { justify-content:center; }
   .lp-hero-channels ul { justify-content:center; }
   .lp-services-grid, .lp-compare, .lp-stats-grid, .lp-contact-inner { grid-template-columns: 1fr; }
+  .lp-contact { overflow:hidden; padding-bottom:60px; }
+  .lp-contact-bleed { display:none; }
+  .lp-contact-meta { flex-direction:column; gap:16px; }
+  .lp-contact-inner { gap:32px; }
+  .lp-form { padding:20px; box-sizing:border-box; width:100%; }
+  .lp-form input:not([type="checkbox"]), .lp-form textarea, .lp-form select { font-size:14px; padding:10px 12px; width:100%; box-sizing:border-box; }
+  .lp-check input { width:20px !important; }
+  .lp-contact-line { font-size:16px; }
   .lp-pains-grid, .lp-consultant-grid, .lp-success-meta { grid-template-columns: 1fr; }
   .lp-process-step { grid-template-columns: 1fr; gap:16px; }
   .lp-success-card { min-width:0; padding:36px 24px; }

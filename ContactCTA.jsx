@@ -100,7 +100,7 @@ function ContactCTA() {
                 <span>Miesięczny budżet reklamowy</span>
                 <select name="budget" style={{ fontFamily: 'inherit', background: '#0a0a0a', color: '#fff', border: '1px solid rgba(255,255,255,.12)', borderRadius: '8px', padding: '14px 16px', fontSize: '15px', outline: 'none' }}>
                   <option value="">Wybierz...</option>
-                  <option value="dopiero-zaczynam">Dopiero zaczynam / nie mam jeszcze budżetu</option>
+                  <option value="dopiero-zaczynam">Dopiero zaczynam</option>
                   <option value="do-4000">do 4 000 zł/mies.</option>
                   <option value="4000-8000">4 000 – 8 000 zł/mies.</option>
                   <option value="8000-15000">8 000 – 15 000 zł/mies.</option>
