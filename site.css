@@ -355,7 +355,7 @@ body { font-family: 'Poppins', system-ui, sans-serif; font-weight:400; -webkit-f
 .lp-quote-role { font-size:14px; color:rgba(0,0,0,.55); }
 
 /* ---------- Contact ---------- */
-.lp-contact { position:relative; overflow:hidden; padding-bottom:120px; }
+.lp-contact { position:relative; overflow:visible; padding-bottom:120px; }
 .lp-contact-bleed { position:absolute; right:-380px; bottom:-260px; width:560px; height:560px; color:#fff; pointer-events:none; opacity:.32; }
 .lp-contact-inner { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; position:relative; }
 .lp-h-display-sm { font-size: clamp(40px, 5vw, 72px); }
